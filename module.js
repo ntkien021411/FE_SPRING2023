@@ -31,3 +31,10 @@ sub_product.onmouseover = function () {
 sub_product.onmouseout = function () {
     sub_product.style.display = 'none';
 };
+
+
+// const VND = new Intl.NumberFormat('vi-VN', {
+//     style: 'currency',
+//     currency: 'VND',
+//   });
+// console.log(  VND.format(10000000));

@@ -1,3 +1,7 @@
+body{
+  overflow-y: scroll;
+  overflow-x: hidden;
+}
 /* FIX FLOAT */
 a {
   text-decoration: none;
@@ -270,7 +274,7 @@ body {
 
 /* Profile Page */
 .content_page {
-  margin-left: 20%;
+  margin-left: 15%;
 }
 .profile_page {
   display: inline-block;
@@ -372,6 +376,10 @@ thead th {
 .heading_intro:hover {
   color: #ec4f21;
   cursor: pointer;
+}
+.intro_content{
+  line-height: 1.8;
+    text-align: justify;
 }
 .block_intro {
   margin-left: 20%;
@@ -640,3 +648,226 @@ thead th {
 .label_register {
     /* margin-top: 20px; */
 }
+
+
+/* pay */
+.infor_cus_order{
+  margin-left: 8%;
+  height: 50vh;
+}
+.heading{
+  text-align: center;
+  padding-top: 40px;
+  padding-bottom: 10px;
+  height: 15vh;
+}
+.infor_cus{
+  margin-right: 10px;
+}
+.title_cus{
+  font-weight: 700;
+  font-size: 20px;
+ 
+}
+.logout_order{
+  font-weight: 700;
+  font-size: 15px;
+  cursor: pointer;
+  float: right;
+  font-style: italic;
+  opacity: 0.7;
+}
+.choice_adr{
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+  margin-bottom: 16px;
+}
+.input_order{
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+  margin-bottom: 16px;
+}
+.transport{
+  height: 5vh;
+}
+.price_ship{
+  float: right;
+}
+
+.block_ship{
+  height: 6vh;
+  border: 1px solid black;
+  padding: 10px;
+  cursor: pointer;
+}
+input{
+  cursor: pointer;
+}
+label{
+  cursor: pointer;
+}
+
+.infor_order{
+ background-color: #fafafa;
+ border-left: 1px solid #5c5959;
+ height: 100vh;
+}
+.head_order{
+
+  padding-top: 30px;
+  padding-left: 30px;
+  padding-bottom: 20px;
+  border-bottom: 1px solid #5c5959;
+}
+.head_order h5{
+  font-weight: 700;
+
+}
+.quanity_pro_order{
+  font-size: 15px;
+  width: 20%;
+  border: 1px solid black;
+  background-color: #000;
+  color: #fff;
+  padding: 5px;
+  border-radius: 25px;
+  position: relative;
+  right: -90%;
+  top: -10%;
+}
+
+.order_product{
+  margin-top: 10px;
+  padding: 0 20px;
+}
+.img_pro_order{
+  width: 100%;
+  border-radius: 10%;
+
+}
+.title_pro{
+  font-weight: 700;
+
+}
+.pro_or_block{
+  overflow-y: scroll;
+  height: 40vh;
+  width: 100%;
+  border-bottom:  1px solid #5c5959;
+  margin-top: 20px;
+  margin-left: 5px;
+}
+.voucer{
+  margin-top: 20px;
+  margin-left: 5px;
+  border-bottom:  1px solid #5c5959;
+  padding-bottom: 20px;
+}
+.code_voucher input{
+  width: 100%;
+  padding: 10px;
+}
+.btn_apply_voucher{
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #5c5959;
+  color: #fff;
+  border: none;
+  border-radius: 10%;
+}
+.cost_order{
+  margin-top: 20px;
+  margin-left: 5px;
+  border-bottom:  1px solid #5c5959;
+  padding-bottom: 10px;
+}
+.cost_ship{
+float: right;
+}
+.price_order{
+  float: right;
+}
+
+.pay_order{
+  margin-top: 20px;
+  margin-left: 5px;
+}
+.total_order{
+  font-size: 20px;
+}
+.total_order_price{
+  font-size: 20px;
+  font-weight: 700;
+  float: right;
+}
+.btn_pay_voucher{
+  width: 100%;
+  padding: 10px;
+  cursor: pointer;
+  background-color: #5c5959;
+  color: #fff;
+  border: none;
+  border-radius: 10%;
+  float: right;
+}
+.back_to_cart{
+  font-weight: 700;
+  font-style: italic;
+  opacity: 0.7;
+}
+
+/* Product detail */
+.img_pro_detail img{
+  width: 100%;
+  object-fit: contain;
+}
+.name_pro{
+  font-weight: 700;
+}
+.infor_pro_detail{
+}
+.detail_content{
+  border-bottom:  1px solid #5c5959;
+}
+.price_detail{
+  color: #ec4f21;
+  font-size: 30px;
+  font-weight: 700;
+  padding-top: 10px;
+}
+  .market_price{
+    opacity: 0.7;
+  }
+  del{
+    padding: 0 5px;
+  }
+  .bg_fw_detail{
+    background-color: #f7f0f0e5;
+    font-weight: 700;
+  }
+  .quantity_btn_detail{
+    margin-top: 20px;
+  }
+  .add_cart{
+    color: #fff;
+    background-color: #ec4f21;
+    border: none;
+    text-align: center;
+    padding: 10px 20px;
+    width: 100%;
+  }
+  .favo_btn{
+    margin-top: 20px;
+    font-size: 20px;
+    font-style: italic;
+  }
+  .favo_btn:hover{
+    opacity: 0.7;
+  }
+
+  .speci_pro{
+    margin-top: 50px;
+  }

@@ -1,0 +1,216 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Thanh toán hóa đơn</title>
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-gH2yIJqKdNHPEq0n4Mqa/HGKIhSkIHeL5AyhkYV8i59U5AR6csBvApHHNl/vI1Bx"
+      crossorigin="anonymous"
+    />
+
+    <!-- JavaScript Bundle with Popper -->
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-A3rJD856KowSb7dwlZdYEkO39Gagi7vIsF0jrRAoQmDKKtQBHUuLZ9AsSv4jD4Xa"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- ICON -->
+
+    <link rel="stylesheet" href="./themify-icons/themify-icons.css" />
+    <!-- <link
+      rel="stylesheet"
+      href="./assets/font/fontawesome-free-6.1.2-web/css/all.min.css"
+    /> -->
+
+    <!-- jQuery first, then Popper.js, then Bootstrap JS -->
+    <script
+      src="https://code.jquery.com/jquery-3.3.1.slim.min.js"
+      integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo"
+      crossorigin="anonymous"
+    ></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.7/umd/popper.min.js"
+      integrity="sha384-UO2eT0CpHqdSJQ6hJty5KVphtPhzWj9WO1clHTMGa3JDZwrnQq4sF86dIHNDz0W1"
+      crossorigin="anonymous"
+    ></script>
+
+    <!-- CSS -->
+    <link rel="stylesheet" href="./css/style.css" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <!-- <link rel="stylesheet" href="./fontawesome-free-6.2.1-web/css/fontawesome.min.css"> -->
+  </head>
+  <body>
+    
+    <div class=" row ">
+       
+        <div class="col-md-7 infor_cus_order row">
+            <div class="col-md-12 heading">
+                <h1>Ant Home</h1>
+            </div>
+            <div class="col-md-6 infor_cus row">
+                <div class="col-md-8">
+                    <p class="title_cus ">Thông tin nhận hàng</p>
+                </div>
+                <div class="col-md-4">
+                    <a href="" class="logout_order"><i class="fa fa-sign-out"></i>Đăng xuất</a>
+                </div>
+                <div class="col-md-12">
+                   <select name="" id="adrs" class="choice_adr" value=""  >
+                    <option value="">Sổ địa chỉ...</option>
+                   </select>
+                </div>
+                <div class="col-md-12">
+                    <input type="text" id="email" class="input_order"  disabled value="kien0965824602@gmail.com" >
+                 </div>
+                 <div class="col-md-12">
+                    <input type="text" id="name" class="input_order"   value="" placeholder="Họ và tên" required>
+                 </div>
+                 <div class="col-md-12">
+                    <input type="text" id="phone" class="input_order"   value="" placeholder="Số điện thoại" required>
+                 </div>
+                 <div class="col-md-12">
+                    <input type="text" class="input_order"   value="" placeholder="Địa chỉ(tùy chọn)" >
+                 </div>
+                 <div class="col-md-12">
+                    <input type="text" class="input_order"   value="" placeholder="Ghi chú(tùy chọn)" >
+                 </div>
+            </div>
+            <div class="col-md-6 ship_type row">
+                <div class="col-md-12 transport">
+                    <p class="title_cus ">Vận chuyển</p>
+                </div>
+                <div class="col-md-12 block_ship ">
+                   <input id="ship_cost" type="radio" class="" checked>
+                   <label for="ship_cost" >Giao hàng tận nơi</label>
+                   <p class="price_ship">40.000₫</p>
+                 </div>
+                 <div class="col-md-12 transport">
+                    <p class="title_cus ">Thanh toán</p>
+                </div>
+                <div class="col-md-12 block_ship ">
+                    <input id="cod" type="radio" class="" name="type_pay">
+                    <label for="cod" >Thanh toán khi giao hàng(COD)</label>
+                  </div>
+                  <div class="col-md-12 block_ship ">
+                    <input id="creaditcart" type="radio" class="" name="type_pay">
+                    <label for="creaditcart" >Thanh toán qua thẻ tín dụng</label>
+                  </div>
+                  <div class="col-md-12 block_ship ">
+                    <input id="momo" type="radio" class="" name="type_pay">
+                    <label for="momo" >Thanh toán qua MOMO Banking</label>
+                  </div>
+            </div>
+        </div>
+        <div class="col-md-4 infor_order">
+            <div class="col-md-12 head_order">
+                <h5>Đơn hàng(8 sản phẩm)</h5>
+            </div>
+            <div class="col-md-12 row pro_or_block">
+                <div class="col-md-12 order_product row">
+                    <div class="col-md-3 ">
+                        <img class="img_pro_order" src="https://bizweb.dktcdn.net/thumb/large/100/396/362/products/da0045c9e48defd093797dfc83fa2c67-1590389087.jpg?v=1595556715920" alt="">
+                        <span class="quanity_pro_order">7</span>
+                    </div>
+                    <div class="col-md-7 ">
+                        <p class="title_pro">Bộ Bàn Ghế Làm Việc Make My Home Simple 1</p>
+                    </div>
+                    <div class="col-md-2 ">
+                        <p class="price_pro">17.276.000₫</p>
+                    </div>
+                </div>
+    
+                <div class="col-md-12 order_product row">
+                    <div class="col-md-3 ">
+                        <img class="img_pro_order" src="https://bizweb.dktcdn.net/thumb/large/100/396/362/products/da0045c9e48defd093797dfc83fa2c67-1590389087.jpg?v=1595556715920" alt="">
+                        <span class="quanity_pro_order">7</span>
+                    </div>
+                    <div class="col-md-7 ">
+                        <p class="title_pro">Bộ Bàn Ghế Làm Việc Make My Home Simple 1</p>
+                    </div>
+                    <div class="col-md-2 ">
+                        <p class="price_pro">17.276.000₫</p>
+                    </div>
+                </div>
+
+                <div class="col-md-12 order_product row">
+                    <div class="col-md-3 ">
+                        <img class="img_pro_order" src="https://bizweb.dktcdn.net/thumb/large/100/396/362/products/da0045c9e48defd093797dfc83fa2c67-1590389087.jpg?v=1595556715920" alt="">
+                        <span class="quanity_pro_order">7</span>
+                    </div>
+                    <div class="col-md-7 ">
+                        <p class="title_pro">Bộ Bàn Ghế Làm Việc Make My Home Simple 1</p>
+                    </div>
+                    <div class="col-md-2 ">
+                        <p class="price_pro">17.276.000₫</p>
+                    </div>
+                </div>
+
+                <div class="col-md-12 order_product row">
+                    <div class="col-md-3 ">
+                        <img class="img_pro_order" src="https://bizweb.dktcdn.net/thumb/large/100/396/362/products/da0045c9e48defd093797dfc83fa2c67-1590389087.jpg?v=1595556715920" alt="">
+                        <span class="quanity_pro_order">7</span>
+                    </div>
+                    <div class="col-md-7 ">
+                        <p class="title_pro">Bộ Bàn Ghế Làm Việc Make My Home Simple 1</p>
+                    </div>
+                    <div class="col-md-2 ">
+                        <p class="price_pro">17.276.000₫</p>
+                    </div>
+                </div>
+            </div>
+
+            <div class="col-md-12 voucer row">
+                <div class="col-md-9 code_voucher">
+                    <input type="text" placeholder="Nhập mã giảm giá">
+                </div>
+                <div class="col-md-3 btn_voucher">
+                    <button class="btn_apply_voucher">Áp dụng</button>
+                </div>
+            </div>
+
+            <div class="col-md-12 cost_order row">
+                <div class="col-md-9 ">
+                    <p>Tạm tính:</p>
+                </div>
+                <div class="col-md-3 ">
+                    <p class="price_order">19.835.000₫</p>
+                </div>
+                <div class="col-md-9 ">
+                    <p>Phí vận chuyển:</p>
+                </div>
+                <div class="col-md-3 ">
+                    <p class="cost_ship">40.000₫</p>
+                </div>
+            </div>
+            
+            <div class="col-md-12 pay_order row">
+                <div class="col-md-9 ">
+                    <p class="total_order">Tổng cộng:</p>
+                </div>
+                <div class="col-md-3 ">
+                    <p class="total_order_price">19.835.000₫</p>
+                </div>
+                <div class="col-md-9 ">
+                    <a href="" class="back_to_cart"><i class="ti-shopping-cart-full"></i>Quay về giỏ hàng</a>
+                </div>
+                <div class="col-md-3 ">
+                    <button class="btn_pay_voucher">Đặt hàng</button>
+                </div>
+            </div>
+            
+            
+
+        </div>
+       
+      </div>
+
+
+
+    <script src="./module.js"></script>
+  </body>
+</html>
