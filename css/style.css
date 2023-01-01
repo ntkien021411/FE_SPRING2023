@@ -68,6 +68,7 @@ body {
   position: relative;
   left: -30px;
   top: 5px;
+      display: inline-block;
 }
 .search-btn i:hover {
   color: orangered;
@@ -249,6 +250,7 @@ body {
 /* sub product */
 .sub_product {
   font-size: 14px;
+  z-index: 2;
 }
 .sub_contet:hover {
   color: #ec4f21;
@@ -580,10 +582,10 @@ thead th {
 .btn_pay {
   width: 80%;
   padding: 10px 0;
-  background-color: #ec4f21;
-  color: #fff;
+  /* background-color: #ec4f21; */
+  /* color: #fff; */
   cursor: pointer;
-  border: none;
+  /* border: none; */
 }
 
 /* LOgin page */
