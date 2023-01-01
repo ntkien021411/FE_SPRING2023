@@ -168,15 +168,15 @@ body {
   width: 100%;
   object-fit: contain;
 }
-.lst_product {
+.popping_product {
   margin-top: 20px;
   margin-bottom: 20px;
 }
 
-.lst_product:hover .name-product {
+.popping_product:hover .name-product {
   color: #ec4f21;
 }
-.lst_product {
+.popping_product {
     z-index: 1;
     color: black;
     padding: 8px 16px;
@@ -185,7 +185,7 @@ body {
     background-color: transparent;
   }
 
-  .lst_product:hover {
+  .popping_product:hover {
     cursor: pointer;
     animation: jelly 0.5s;
   }
@@ -235,7 +235,7 @@ body {
 .show_all {
   margin: 0 auto;
   padding: 15px;
-  border: none;
+  /* border: none; */
 }
 .btn_show {
   margin-top: 20px;
