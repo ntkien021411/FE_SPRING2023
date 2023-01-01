@@ -316,12 +316,16 @@ body {
 
 /* Edit button */
 .edit_profile_btn {
-  border: 1px solid black;
+  /* border: 1px solid black; */
   padding: 10px;
-  color: #fff;
-  border-radius: 5%;
-  background-color: #ec4f21;
+  /* color: #fff; */
+  /* border-radius: 5%; */
+  /* background-color: #ec4f21; */
 }
+
+  
+
+
 .edit_profile_btn:hover {
   opacity: 0.5;
 }
@@ -620,10 +624,10 @@ thead th {
 .btn_login {
   width: 95%;
   padding: 8px;
-  color: #fff;
+  /* color: #fff;
   background-color: #ec4f21;
   border: none;
-  cursor: pointer;
+  cursor: pointer; */
   margin: 20px 0;
 }
 .fb-login-button {
@@ -773,10 +777,10 @@ label{
   width: 100%;
   padding: 10px;
   cursor: pointer;
-  background-color: #5c5959;
+  /* background-color: #5c5959;
   color: #fff;
   border: none;
-  border-radius: 10%;
+  border-radius: 10%; */
 }
 .cost_order{
   margin-top: 20px;
@@ -807,11 +811,11 @@ float: right;
   width: 100%;
   padding: 10px;
   cursor: pointer;
-  background-color: #5c5959;
+  /* background-color: #5c5959;
   color: #fff;
-  border: none;
-  border-radius: 10%;
-  float: right;
+  border: none; */
+  /* border-radius: 10%;
+  float: right; */
 }
 .back_to_cart{
   font-weight: 700;
@@ -852,9 +856,9 @@ float: right;
     margin-top: 20px;
   }
   .add_cart{
-    color: #fff;
-    background-color: #ec4f21;
-    border: none;
+    /* color: #fff; */
+    /* background-color: #ec4f21; */
+    /* border: none; */
     text-align: center;
     padding: 10px 20px;
     width: 100%;
@@ -870,4 +874,36 @@ float: right;
 
   .speci_pro{
     margin-top: 50px;
+  }
+
+  button {
+    z-index: 1;
+    position: relative;
+    color: #ff3e00;
+    padding: 8px 16px;
+    outline: none;
+    border: 1px solid #ff3e00;
+    background-color: transparent;
+    transition: all 0.25s ease-in-out;
+  }
+
+  button::before {
+    content: '';
+    z-index: -1;
+    position: absolute;
+    inset: 0;
+    background-color: #ff3e00;
+    transform-origin: center left;
+    transform: scaleX(0);
+    transition: transform 0.25s ease-in-out;
+  }
+
+  button:hover {
+    cursor: pointer;
+    color: #fff;
+  }
+
+  button:hover::before {
+    transform-origin: center right;
+    transform: scaleY(1);
   }
