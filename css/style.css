@@ -172,14 +172,39 @@ body {
   margin-top: 20px;
   margin-bottom: 20px;
 }
-.lst_product:hover {
-  cursor: pointer;
-  transform: rotate(-10deg) scale(1);
-  transition: 0.5s;
-}
+
 .lst_product:hover .name-product {
   color: #ec4f21;
 }
+.lst_product {
+    z-index: 1;
+    color: black;
+    padding: 8px 16px;
+    outline: none;
+    /* border: 1px solid #5c5959; */
+    background-color: transparent;
+  }
+
+  .lst_product:hover {
+    cursor: pointer;
+    animation: jelly 0.5s;
+  }
+
+  @keyframes jelly {
+    0%,
+    100% {
+      transform: scale(1, 1);
+    }
+    25% {
+      transform: scale(0.9, 1.1);
+    }
+    50% {
+      transform: scale(1.1, 0.9);
+    }
+    75% {
+      transform: scale(0.95, 1.05);
+    }
+  }
 
 /* Hot product */
 .name-product_hot {
@@ -876,6 +901,7 @@ float: right;
     margin-top: 50px;
   }
 
+  /* Button */
   button {
     z-index: 1;
     position: relative;
@@ -907,3 +933,5 @@ float: right;
     transform-origin: center right;
     transform: scaleY(1);
   }
+ /* Button */
+
